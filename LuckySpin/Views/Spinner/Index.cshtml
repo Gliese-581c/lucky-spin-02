@@ -16,10 +16,10 @@
 <body>
 
  <!-- //TODO: Change the <h1> text below to display the lucky number as a word, like "Lucky Seven" . Use the DIJ TT.numberToText() along with a Model's luck value -->
-    <h1> Lucky Number </h1>
+    <h1> Lucky @Transform.numberToText(Model.Luck) </h1>
     <button onclick='history.go(0)'>Spin</button>
  <!-- //TODO: Use Model values in the appropriate places in this template  -->
-    @foreach (var num in new int[]{2,7,9})
+    @foreach (int num in Model.Numbers)
     {
         <div>@num</div>
     }
