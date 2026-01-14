@@ -20,21 +20,20 @@ namespace LuckySpin.Controllers
             {
                 //TODO: assign properties Luck and Numbers, appropriate values in the constructor
                 Luck = luck,
-                Numbers = new int[] { random.Next(1, 10), random.Next(1, 10), random.Next(1, 10) },
-                
-
+                Numbers = [random.Next(1, 10), random.Next(1, 10), random.Next(1, 10)]
             };
 
-        //for each loop here
-            
-            
-            
             //TODO: Use a conditional to assign spin's ImageShown property a CSS display value of "block" if the lucky number is in the Numbers array
+            foreach (int num in spin.Numbers)
+            {
+                int number = num;
+                int lucky = spin.Luck;
 
-
-            
-            //TODO: Use a conditional to assign spin's ImageShown property a CSS display value of "block" if the lucky number is in the Numbers array
-
+                if (number == lucky)
+                {
+                    spin.ImageDisplay = "block";
+                }
+            }
             
             return View( spin ); //Passes the spin object to the View as a parameter
         }
