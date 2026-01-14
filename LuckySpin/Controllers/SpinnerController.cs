@@ -32,7 +32,7 @@ namespace LuckySpin.Controllers
             //TODO: Use a conditional to assign spin's ImageShown property a CSS display value of "block" if the lucky number is in the Numbers array
 
 
-
+            
             //TODO: Use a conditional to assign spin's ImageShown property a CSS display value of "block" if the lucky number is in the Numbers array
 
             
